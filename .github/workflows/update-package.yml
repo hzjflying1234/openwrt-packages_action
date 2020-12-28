@@ -44,7 +44,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x ${{matrix.target}}.sh
-        git clone -b ${{matrix.target}} https://github.com/hzjflying1234/openwrt-packages.git ${{matrix.target}}
+        git clone -b ${{matrix.target}} https://github.com/MrH723/openwrt-packages.git ${{matrix.target}}
         cd ${{matrix.target}}
         rm -Rf *
         git rm --cache *
